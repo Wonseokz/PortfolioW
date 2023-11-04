@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<!-- HTML file Wonseok 2022110021 2023/11/4  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("./style.ejs") %>
+</head>
+<%- include("./header.ejs") %>
+
+    <body>
+        <%- include("./nav.ejs") %>
+            <!-- project section-->
+            <section class="project" id="project-section">
+                <h2 class="heading">Project<span class="highlight">s</span></h2>
+                <p class="sub-heading">
+                    <%= intro %>
+                </p> <!--introduction-->
+                <div class="seperator"></div>
+
+                <!---->
+                <div class="about-me-container">
+                    <div class="left-col">
+                        <img src="<%= imgsrc1 %>" class="about-image" alt="">
+                    </div>
+                    <div class="right-col">
+                        <p class="about-para"></p>
+                    </div>
+                </div>
+
+                <div class="about-me-container">
+                    <div class="left-col">
+                        <img src="" class="about-image" alt="">
+                    </div>
+                    <div class="right-col">
+                        <p class="about-para" style="font-size: 1.8rem;">
+                            <%= imgsrc1descrp %>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-me-container">
+                    <div class="left-col">
+                        <img src="<%= imgsrc2 %>" class="about-image" alt="">
+                    </div>
+                    <div class="right-col">
+                        <p class="about-para"></p>
+                    </div>
+                </div>
+
+                <div class="about-me-container">
+                    <div class="left-col">
+                        <img src="" class="about-image" alt="">
+                    </div>
+                    <div class="right-col">
+                        <p class="about-para" style="font-size: 1.8rem;">
+                            <%= imgsrc2descrp %>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-me-container">
+                    <div class="left-col">
+                        <img src="<%= imgsrc3 %>" class="about-image" alt="">
+                    </div>
+                    <div class="right-col">
+                        <p class="about-para"></p>
+                    </div>
+                </div>
+
+                <div class="about-me-container">
+                    <div class="left-col">
+                        <img src="" class="about-image" alt="">
+                    </div>
+                    <div class="right-col">
+                        <p class="about-para" style="font-size: 1.8rem;">
+                            <%= imgsrc3descrp %>
+                        </p>
+                    </div>
+                </div>
+
+                <!---->
+            </section>
+            <%- include("./footer.ejs") %>
+                <%- include("./js.ejs") %>
+    </body>
+
+</html>

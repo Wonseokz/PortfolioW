@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<!-- HTML file Wonseok 2022110021 2023/11/4  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("./style.ejs") %>
+</head>
+<%- include("./header.ejs") %>
+
+    <body>
+        <%- include("./nav.ejs") %>
+            <!--about section-->
+            <section class="about" id="about-section">
+                <h2 class="heading">about <span class="highlight">me</span></h2>
+                <p class="sub-heading">
+                    <%= greetings %>
+                </p><!--greetings and illustration-->
+                <div class="seperator"></div>
+
+                <div class="about-me-container">
+                    <div class="left-col">
+                        <img src="<%= imgsrc %>" width="500px" height="500px" class="about-image" alt="">
+                    </div>
+                    <div class="right-col">
+                        <p class="about-para">
+                            <%= introduction%>
+                        </p>
+                        <a href="img/resume.pdf" class="btn">Resume</a><!--PDF-->
+                    </div>
+                </div>
+            </section>
+            <%- include("./footer.ejs") %>
+                <%- include("./js.ejs") %>
+    </body>
+
+</html>

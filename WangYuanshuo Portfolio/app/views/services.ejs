@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<!-- HTML file Wonseok 2022110021 2023/11/4  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("./style.ejs") %>
+</head>
+<%- include("./header.ejs") %>
+
+    <body>
+        <%- include("./nav.ejs") %>
+            <!-- services section -->
+            <section class="service" id="project-section">
+                <h2 class="heading">Service<span class="highlight">s</span></h2>
+                <p class="sub-heading">
+                    <%= intro %>
+                </p><!--introduction-->
+                <div class="seperator"></div>
+                <ul>
+                    <li>
+                        <h3>
+                            <%= service1 %>
+                        </h3><br>
+                    </li>
+                    <li>
+                        <h3>
+                            <%= service2 %>
+                        </h3><br>
+                    </li>
+                    <li>
+                        <h3>
+                            <%= service3 %>
+                        </h3>
+                    </li>
+                </ul>
+                <div class="about-me-container">
+                    <div class="left-col">
+                        <img src="<%= imgsrc %>" class="about-image" alt="">
+                    </div>
+                    <div class="right-col">
+                        <p class="about-para"></p>
+                    </div>
+                </div>
+
+            </section>
+            <%- include("./footer.ejs") %>
+                <%- include("./js.ejs") %>
+    </body>
+
+</html>

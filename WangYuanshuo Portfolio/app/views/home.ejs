@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!-- HTML file Wonseok 2022110021 2023/11/4  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("./style.ejs") %> <!-- any section have this-->
+</head>
+<%- include("./header.ejs") %> <!-- any section have this-->
+
+    <body>
+        <%- include("./nav.ejs") %> <!-- any section have this-->
+            <!-- home section -->
+            <section class="home">
+                <div class="hero-content">
+                    <h1 class="hero-heading"><span class="highlight">hi,</span>i am <%= name %>
+                    </h1><!-- input your name -->
+                    <p class="profession">
+                        <%= Cname %>
+                    </p><!-- Chinese name -->
+                    <p class="info">
+                        <%= greetings %>
+                    </p><!-- greetings and statement -->
+                    <a href="./contact" class="btn">contact</a>
+                </div>
+                <img src="<%= imgsrc %>" width="500px" height="500px" class="image" alt="">
+            </section>
+            <%- include("./footer.ejs") %><!-- any section have this-->
+                <%- include("./js.ejs") %>
+    </body>
+
+</html>

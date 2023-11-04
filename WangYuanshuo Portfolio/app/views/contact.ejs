@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!-- HTML file Wonseok 2022110021 2023/11/4  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("./style.ejs") %>
+</head>
+<%- include("./header.ejs") %>
+
+    <body>
+        <%- include("./nav.ejs") %>
+            <!-- contact section -->
+            <section class="contact" id="contact-section">
+                <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+                <p class="sub-heading">
+                    <%= intro %>
+                </p><!--introduction-->
+                <div class="seperator"></div>
+                <div class="contact-form">
+                    <div class="name">
+                        <input type="text" class="first-name" required placeholder="first name">
+                        <input type="text" class="last-name" required placeholder="last name">
+                    </div>
+                    <input type="number" required class="contact-number" placeholder="contact number">
+                    <input type="email" required class="email" placeholder="email">
+                    <textarea class="message" placeholder="message" required></textarea>
+                    <button class="btn contact-btn"><a onclick="fun1()" href="./home" class="btn">Submit</a></button>
+                </div>
+
+            </section>
+            <%- include("./footer.ejs") %>
+                <%- include("./js.ejs") %>
+    </body>
+
+</html>
